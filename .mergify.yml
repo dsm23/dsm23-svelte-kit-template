@@ -9,7 +9,8 @@ pull_request_rules:
       - check-success=format
       - check-success=gitleaks
       - check-success=lint
-      - '#check-success>=7'
+      - check-success=unit-testing
+      - '#check-success>=8'
     actions:
       review:
         type: APPROVE
@@ -23,7 +24,8 @@ pull_request_rules:
       - check-success=format
       - check-success=gitleaks
       - check-success=lint
-      - '#check-success>=7'
+      - check-success=unit-testing
+      - '#check-success>=8'
     actions:
       review:
         type: APPROVE
@@ -37,7 +39,8 @@ pull_request_rules:
       - check-success=format
       - check-success=gitleaks
       - check-success=lint
-      - '#check-success>=7'
+      - check-success=unit-testing
+      - '#check-success>=8'
       - '#approved-reviews-by>=1'
     actions:
       merge:
