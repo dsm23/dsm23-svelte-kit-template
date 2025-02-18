@@ -11,7 +11,7 @@ pull_request_rules:
       - check-success=lint
       - check-success=unit-testing
       - check-success=zizmor
-      - '#check-success>=9'
+      - "#check-success>=9"
     actions:
       review:
         type: APPROVE
@@ -27,7 +27,7 @@ pull_request_rules:
       - check-success=lint
       - check-success=unit-testing
       - check-success=zizmor
-      - '#check-success>=9'
+      - "#check-success>=9"
     actions:
       review:
         type: APPROVE
@@ -43,8 +43,8 @@ pull_request_rules:
       - check-success=lint
       - check-success=unit-testing
       - check-success=zizmor
-      - '#check-success>=9'
-      - '#approved-reviews-by>=1'
+      - "#check-success>=9"
+      - "#approved-reviews-by>=1"
     actions:
       merge:
         method: merge
