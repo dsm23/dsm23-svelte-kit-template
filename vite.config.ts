@@ -3,10 +3,9 @@ import { svelteTesting } from '@testing-library/svelte/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { coverageConfigDefaults } from 'vitest/config';
-import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-	plugins: [sveltekit(), tailwindcss(), tsconfigPaths()],
+	plugins: [sveltekit(), tailwindcss()],
 
 	test: {
 		coverage: {
