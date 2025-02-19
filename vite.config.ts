@@ -19,12 +19,12 @@ export default defineConfig({
         "**/e2e/**",
         ...coverageConfigDefaults.exclude,
       ],
-      // thresholds: {
-      // 	lines: 10,
-      // 	functions: 10,
-      // 	branches: 10,
-      // 	statements: 10
-      // }
+      thresholds: {
+        lines: 10,
+        functions: 10,
+        branches: 10,
+        statements: 10,
+      },
     },
     workspace: [
       {
