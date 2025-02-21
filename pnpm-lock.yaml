@@ -123,7 +123,7 @@ importers:
         specifier: 0.475.0
         version: 0.475.0(svelte@5.20.2)
       mode-watcher:
-        specifier: ^0.5.1
+        specifier: 0.5.1
         version: 0.5.1(svelte@5.20.2)
       prettier:
         specifier: 3.5.1
