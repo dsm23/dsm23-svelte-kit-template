@@ -132,6 +132,14 @@
   ];
 </script>
 
+<svelte:head>
+  <title>SvelteKit Enterprise Boilerplate</title>
+  <meta
+    name="description"
+    content="This is where the description goes for SEO"
+  />
+</svelte:head>
+
 <main>
   <section class="bg-white dark:bg-gray-900">
     <div
