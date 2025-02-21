@@ -33,6 +33,12 @@ Thumbs.db
 # Coverage
 coverage/
 
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
