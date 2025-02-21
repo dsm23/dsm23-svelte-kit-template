@@ -75,7 +75,7 @@ importers:
         specifier: 5.2.7
         version: 5.2.7(svelte@5.20.2)(vite@6.1.1(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))(vitest@3.0.6(@types/node@22.13.4)(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.1)(yaml@2.7.0))
       '@testing-library/user-event':
-        specifier: ^14.6.1
+        specifier: 14.6.1
         version: 14.6.1(@testing-library/dom@10.4.0)
       '@vitest/coverage-v8':
         specifier: 3.0.6
