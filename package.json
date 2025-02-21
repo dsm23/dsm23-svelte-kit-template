@@ -20,7 +20,7 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.10.1",
+    "@axe-core/playwright": "4.10.1",
     "@chromatic-com/storybook": "3.2.4",
     "@commitlint/cli": "19.7.1",
     "@commitlint/config-conventional": "19.7.1",
@@ -48,7 +48,7 @@
     "clsx": "2.1.1",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
-    "dotenv": "^16.4.7",
+    "dotenv": "16.4.7",
     "eslint": "9.20.1",
     "eslint-config-prettier": "10.0.1",
     "eslint-plugin-svelte": "2.46.1",
