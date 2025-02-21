@@ -12,7 +12,8 @@ export default defineConfig({
       all: true,
       include: ["src/**/*.svelte", "src/**/*.[jt]s?(x)"],
       exclude: [
-        "src/**/*.stories.[jt]s?(x)",
+        "src/**/*.stories.svelte",
+        "src/**/*.test.svelte",
         "src/test-utils/**",
         "src/mocks/**",
         "**/node_modules/**",
