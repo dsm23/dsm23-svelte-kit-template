@@ -179,7 +179,7 @@
       <div
         class="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3"
       >
-        {#each LP_GRID_ITEMS as singleItem}
+        {#each LP_GRID_ITEMS as singleItem (singleItem.title)}
           <div class="flex flex-col items-center justify-center text-center">
             <div
               class="mb-4 flex size-10 items-center justify-center rounded-full p-1.5 text-blue-700 lg:size-12"
