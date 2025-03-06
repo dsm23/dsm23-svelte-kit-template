@@ -144,8 +144,8 @@ importers:
         specifier: 5.22.5
         version: 5.22.5
       svelte-check:
-        specifier: 4.1.4
-        version: 4.1.4(picomatch@4.0.2)(svelte@5.22.5)(typescript@5.8.2)
+        specifier: 4.1.5
+        version: 4.1.5(picomatch@4.0.2)(svelte@5.22.5)(typescript@5.8.2)
       svelte-radix:
         specifier: 2.0.1
         version: 2.0.1(svelte@5.22.5)
@@ -3216,8 +3216,8 @@ packages:
     peerDependencies:
       svelte: ^5.0.0
 
-  svelte-check@4.1.4:
-    resolution: {integrity: sha512-v0j7yLbT29MezzaQJPEDwksybTE2Ups9rUxEXy92T06TiA0cbqcO8wAOwNUVkFW6B0hsYHA+oAX3BS8b/2oHtw==}
+  svelte-check@4.1.5:
+    resolution: {integrity: sha512-Gb0T2IqBNe1tLB9EB1Qh+LOe+JB8wt2/rNBDGvkxQVvk8vNeAoG+vZgFB/3P5+zC7RWlyBlzm9dVjZFph/maIg==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -6762,7 +6762,7 @@ snapshots:
       svelte: 5.22.5
       zimmerframe: 1.1.2
 
-  svelte-check@4.1.4(picomatch@4.0.2)(svelte@5.22.5)(typescript@5.8.2):
+  svelte-check@4.1.5(picomatch@4.0.2)(svelte@5.22.5)(typescript@5.8.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 4.0.3
