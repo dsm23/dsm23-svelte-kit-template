@@ -57,7 +57,7 @@
     "husky": "9.1.7",
     "jsdom": "26.0.0",
     "lint-staged": "15.5.0",
-    "lucide-svelte": "0.482.0",
+    "lucide-svelte": "0.483.0",
     "mode-watcher": "0.5.1",
     "prettier": "3.5.3",
     "prettier-plugin-css-order": "2.1.2",
