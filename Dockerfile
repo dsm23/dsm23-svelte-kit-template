@@ -3,8 +3,9 @@
 FROM node:22.14.0-alpine@sha256:9bef0ef1e268f60627da9ba7d7605e8831d5b56ad07487d24d1aa386336d1944 AS base
 
 # corepack is broken https://github.com/nodejs/corepack/issues/612
-# TODO: remove the following when corepack is fixed
-RUN npm install -g corepack@latest
+# corepack was fixed but is will be removed from node from v25+
+# TODO: re-add corepack after it's been removed
+# RUN npm install -g corepack@latest
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -20,7 +21,6 @@ COPY package.json pnpm-lock.yaml ./
 COPY .husky/ ./.husky/
 
 RUN corepack enable pnpm
-RUN corepack up
 RUN pnpm install --frozen-lockfile
 
 # Rebuild the source code only when needed
@@ -30,7 +30,6 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 RUN corepack enable pnpm
-RUN corepack up
 RUN pnpm run build
 
 # Production image, copy all the files and run next
