@@ -6,16 +6,16 @@ pull_request_rules:
       - check-success=amd64
       - check-success=build
       - check-success=check
-      - check-success~=codeql \([a-z]*\)
+      - check-success=codeql (javascript)
+      - check-success=codeql (typescript)
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
       - check-success=lint
-      - check-success~=playwright-tests \(\d, \d\)
+      - check-success=playwright-tests
       - check-success=pr-title
       - check-success=unit-testing
       - check-success=zizmor
-      - "#check-success>=21"
     actions:
       review:
         type: APPROVE
@@ -26,16 +26,16 @@ pull_request_rules:
       - check-success=amd64
       - check-success=build
       - check-success=check
-      - check-success~=codeql \([a-z]*\)
+      - check-success=codeql (javascript)
+      - check-success=codeql (typescript)
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
       - check-success=lint
-      - check-success~=playwright-tests \(\d, \d\)
+      - check-success=playwright-tests
       - check-success=pr-title
       - check-success=unit-testing
       - check-success=zizmor
-      - "#check-success>=21"
     actions:
       review:
         type: APPROVE
@@ -46,16 +46,16 @@ pull_request_rules:
       - check-success=amd64
       - check-success=build
       - check-success=check
-      - check-success~=codeql \([a-z]*\)
+      - check-success=codeql (javascript)
+      - check-success=codeql (typescript)
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
       - check-success=lint
-      - check-success~=playwright-tests \(\d, \d\)
+      - check-success=playwright-tests
       - check-success=pr-title
       - check-success=unit-testing
       - check-success=zizmor
-      - "#check-success>=21"
       - "#approved-reviews-by>=1"
     actions:
       merge:
