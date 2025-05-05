@@ -81,8 +81,8 @@ importers:
         specifier: 3.1.2
         version: 3.1.2(vitest@3.1.2(@types/node@22.13.4)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.29.2)(yaml@2.7.0))
       bits-ui:
-        specifier: 1.4.5
-        version: 1.4.5(svelte@5.28.2)
+        specifier: 1.4.6
+        version: 1.4.6(svelte@5.28.2)
       class-variance-authority:
         specifier: 0.7.1
         version: 0.7.1
@@ -1471,8 +1471,8 @@ packages:
     resolution: {integrity: sha512-aVNobHnJqLiUelTaHat9DZ1qM2w0C0Eym4LPI/3JxOnSokGVdsl1T1kN7TFvsEAD8G47A6VKQ0TVHqbBnYMJlQ==}
     engines: {node: '>=12.0.0'}
 
-  bits-ui@1.4.5:
-    resolution: {integrity: sha512-hYgxkpFPN6MaNrCgzVgMdSFclZA18N0pV/DJnG9Siz0uvHWTJw4ccnIpotKXmkL+6wMo3q/Cre/C0q4WHwuqGw==}
+  bits-ui@1.4.6:
+    resolution: {integrity: sha512-EN2niBF9iBe03GzSJ64I369DA/pRdoC7sCKVAqIxMkxrk/ClfDurzNJkf4RMK6EFOxeqWzTVFJTGyPdmBAy6Lw==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.11.0
@@ -5147,7 +5147,7 @@ snapshots:
     dependencies:
       open: 8.4.2
 
-  bits-ui@1.4.5(svelte@5.28.2):
+  bits-ui@1.4.6(svelte@5.28.2):
     dependencies:
       '@floating-ui/core': 1.6.9
       '@floating-ui/dom': 1.6.13
