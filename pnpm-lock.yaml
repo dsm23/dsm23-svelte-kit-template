@@ -123,8 +123,8 @@ importers:
         specifier: 0.508.0
         version: 0.508.0(svelte@5.28.2)
       mode-watcher:
-        specifier: 1.0.6
-        version: 1.0.6(svelte@5.28.2)
+        specifier: 1.0.7
+        version: 1.0.7(svelte@5.28.2)
       prettier:
         specifier: 3.5.3
         version: 3.5.3
@@ -2865,8 +2865,8 @@ packages:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
     hasBin: true
 
-  mode-watcher@1.0.6:
-    resolution: {integrity: sha512-6bG6KfPPaZoaw523rLR3z8dlCK/dskIBv7z7qdRPizD5b5BDYyCCLQ33FSCRTd7Ai3i7FWIBuXCZaF5IVVC3GQ==}
+  mode-watcher@1.0.7:
+    resolution: {integrity: sha512-ZGA7ZGdOvBJeTQkzdBOnXSgTkO6U6iIFWJoyGCTt6oHNg9XP9NBvS26De+V4W2aqI+B0yYXUskFG2VnEo3zyMQ==}
     peerDependencies:
       svelte: ^5.27.0
 
@@ -6835,7 +6835,7 @@ snapshots:
     dependencies:
       minimist: 1.2.8
 
-  mode-watcher@1.0.6(svelte@5.28.2):
+  mode-watcher@1.0.7(svelte@5.28.2):
     dependencies:
       runed: 0.25.0(svelte@5.28.2)
       svelte: 5.28.2
