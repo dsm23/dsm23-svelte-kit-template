@@ -81,8 +81,8 @@ importers:
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/node@22.13.4)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(yaml@2.7.1))
       bits-ui:
-        specifier: 1.8.0
-        version: 1.8.0(svelte@5.33.3)
+        specifier: 2.1.0
+        version: 2.1.0(@internationalized/date@3.7.0)(svelte@5.33.3)
       class-variance-authority:
         specifier: 0.7.1
         version: 0.7.1
@@ -556,11 +556,11 @@ packages:
     resolution: {integrity: sha512-0J+zgWxHN+xXONWIyPWKFMgVuJoZuGiIFu8yxk7RJjxkzpGmyja5wRFqZIVtjDVOQpV+Rw0iOAjYPE2eQyjr0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@floating-ui/core@1.6.9':
-    resolution: {integrity: sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==}
+  '@floating-ui/core@1.7.0':
+    resolution: {integrity: sha512-FRdBLykrPPA6P76GGGqlex/e7fbe0F1ykgxHYNXQsH/iTEtjMj/f9bpY5oQqbjt5VgZvgz/uKXbGuROijh3VLA==}
 
-  '@floating-ui/dom@1.6.13':
-    resolution: {integrity: sha512-umqzocjDgNRGTuO7Q8CU32dkHkECqI8ZdMZ5Swb6QAM0t5rnlrN3lGo1hdpscRd3WS8T6DKYK4ephgIH9iRh3w==}
+  '@floating-ui/dom@1.7.0':
+    resolution: {integrity: sha512-lGTor4VlXcesUMh1cupTUTDoCxMb0V6bm3CnxHzQcw8Eaf1jQbgQX4i02fYgT0vJ82tb5MZ4CZk1LRGkktJCzg==}
 
   '@floating-ui/utils@0.2.9':
     resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
@@ -1479,11 +1479,12 @@ packages:
     resolution: {integrity: sha512-aVNobHnJqLiUelTaHat9DZ1qM2w0C0Eym4LPI/3JxOnSokGVdsl1T1kN7TFvsEAD8G47A6VKQ0TVHqbBnYMJlQ==}
     engines: {node: '>=12.0.0'}
 
-  bits-ui@1.8.0:
-    resolution: {integrity: sha512-CXD6Orp7l8QevNDcRPLXc/b8iMVgxDWT2LyTwsdLzJKh9CxesOmPuNePSPqAxKoT59FIdU4aFPS1k7eBdbaCxg==}
-    engines: {node: '>=18', pnpm: '>=8.7.0'}
+  bits-ui@2.1.0:
+    resolution: {integrity: sha512-hDYT8NCzKbqPhm7E6af5ZfSOPV6JZ5F/a2X1I5x0Jxn11y4Ts7ufw8sdVE0rNpF+cyLnx/96+048jAY37FepOw==}
+    engines: {node: '>=20', pnpm: '>=8.7.0'}
     peerDependencies:
-      svelte: ^5.11.0
+      '@internationalized/date': ^3.8.1
+      svelte: ^5.33.0
 
   bl@4.1.0:
     resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
@@ -3165,6 +3166,11 @@ packages:
     peerDependencies:
       svelte: ^5.7.0
 
+  runed@0.28.0:
+    resolution: {integrity: sha512-k2xx7RuO9hWcdd9f+8JoBeqWtYrm5CALfgpkg2YDB80ds/QE4w0qqu34A7fqiAwiBBSBQOid7TLxwxVC27ymWQ==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
 
@@ -3390,6 +3396,12 @@ packages:
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.0.0
+
+  svelte-toolbelt@0.8.2:
+    resolution: {integrity: sha512-qoQYJYkLlz/31EcpbZFk+2vp4qKJn9aM7iO2JvBnzaJD/fTmMtbrP9gwzgnvn/Y8miJFCnsF6CZ5zsHC2d/p/A==}
+    engines: {node: '>=18', pnpm: '>=8.7.0'}
+    peerDependencies:
+      svelte: ^5.30.2
 
   svelte2tsx@0.7.35:
     resolution: {integrity: sha512-z2lnOnrfb5nrlRfFQI8Qdz03xQqMHUfPj0j8l/fQuydrH89cCeN+v9jgDwK9GyMtdTRUkE7Neu9Gh+vfXJAfuQ==}
@@ -4181,13 +4193,13 @@ snapshots:
       '@eslint/core': 0.14.0
       levn: 0.4.1
 
-  '@floating-ui/core@1.6.9':
+  '@floating-ui/core@1.7.0':
     dependencies:
       '@floating-ui/utils': 0.2.9
 
-  '@floating-ui/dom@1.6.13':
+  '@floating-ui/dom@1.7.0':
     dependencies:
-      '@floating-ui/core': 1.6.9
+      '@floating-ui/core': 1.7.0
       '@floating-ui/utils': 0.2.9
 
   '@floating-ui/utils@0.2.9': {}
@@ -5165,16 +5177,16 @@ snapshots:
     dependencies:
       open: 8.4.2
 
-  bits-ui@1.8.0(svelte@5.33.3):
+  bits-ui@2.1.0(@internationalized/date@3.7.0)(svelte@5.33.3):
     dependencies:
-      '@floating-ui/core': 1.6.9
-      '@floating-ui/dom': 1.6.13
+      '@floating-ui/core': 1.7.0
+      '@floating-ui/dom': 1.7.0
       '@internationalized/date': 3.7.0
       css.escape: 1.5.1
       esm-env: 1.2.2
-      runed: 0.23.4(svelte@5.33.3)
+      runed: 0.28.0(svelte@5.33.3)
       svelte: 5.33.3
-      svelte-toolbelt: 0.7.1(svelte@5.33.3)
+      svelte-toolbelt: 0.8.2(svelte@5.33.3)
       tabbable: 6.2.0
 
   bl@4.1.0:
@@ -6831,6 +6843,11 @@ snapshots:
       esm-env: 1.2.2
       svelte: 5.33.3
 
+  runed@0.28.0(svelte@5.33.3):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.33.3
+
   rxjs@7.8.1:
     dependencies:
       tslib: 2.8.1
@@ -7034,6 +7051,13 @@ snapshots:
     dependencies:
       clsx: 2.1.1
       runed: 0.23.4(svelte@5.33.3)
+      style-to-object: 1.0.8
+      svelte: 5.33.3
+
+  svelte-toolbelt@0.8.2(svelte@5.33.3):
+    dependencies:
+      clsx: 2.1.1
+      runed: 0.28.0(svelte@5.33.3)
       style-to-object: 1.0.8
       svelte: 5.33.3
 
