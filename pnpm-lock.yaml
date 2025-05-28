@@ -30,8 +30,8 @@ importers:
         specifier: 9.27.0
         version: 9.27.0
       '@ianvs/prettier-plugin-sort-imports':
-        specifier: 4.4.1
-        version: 4.4.1(prettier@3.5.3)
+        specifier: 4.4.2
+        version: 4.4.2(prettier@3.5.3)
       '@playwright/test':
         specifier: 1.52.0
         version: 1.52.0
@@ -136,7 +136,7 @@ importers:
         version: 3.4.0(prettier@3.5.3)(svelte@5.33.4)
       prettier-plugin-tailwindcss:
         specifier: 0.6.11
-        version: 0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.3))(prettier-plugin-css-order@2.1.2(postcss@8.5.3)(prettier@3.5.3))(prettier-plugin-svelte@3.4.0(prettier@3.5.3)(svelte@5.33.4))(prettier@3.5.3)
+        version: 0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3))(prettier-plugin-css-order@2.1.2(postcss@8.5.3)(prettier@3.5.3))(prettier-plugin-svelte@3.4.0(prettier@3.5.3)(svelte@5.33.4))(prettier@3.5.3)
       storybook:
         specifier: 9.0.0
         version: 9.0.0(@testing-library/dom@10.4.0)(prettier@3.5.3)
@@ -581,11 +581,11 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@ianvs/prettier-plugin-sort-imports@4.4.1':
-    resolution: {integrity: sha512-F0/Hrcfpy8WuxlQyAWJTEren/uxKhYonOGY4OyWmwRdeTvkh9mMSCxowZLjNkhwi/2ipqCgtXwwOk7tW0mWXkA==}
+  '@ianvs/prettier-plugin-sort-imports@4.4.2':
+    resolution: {integrity: sha512-KkVFy3TLh0OFzimbZglMmORi+vL/i2OFhEs5M07R9w0IwWAGpsNNyE4CY/2u0YoMF5bawKC2+8/fUH60nnNtjw==}
     peerDependencies:
       '@vue/compiler-sfc': 2.7.x || 3.x
-      prettier: 2 || 3
+      prettier: 2 || 3 || ^4.0.0-0
     peerDependenciesMeta:
       '@vue/compiler-sfc':
         optional: true
@@ -3562,7 +3562,7 @@ snapshots:
       '@babel/parser': 7.26.9
       '@babel/template': 7.26.9
       '@babel/types': 7.26.9
-      debug: 4.4.0
+      debug: 4.4.1
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -3906,7 +3906,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.3)':
+  '@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3)':
     dependencies:
       '@babel/generator': 7.26.9
       '@babel/parser': 7.26.9
@@ -6073,11 +6073,11 @@ snapshots:
       prettier: 3.5.3
       svelte: 5.33.4
 
-  prettier-plugin-tailwindcss@0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.3))(prettier-plugin-css-order@2.1.2(postcss@8.5.3)(prettier@3.5.3))(prettier-plugin-svelte@3.4.0(prettier@3.5.3)(svelte@5.33.4))(prettier@3.5.3):
+  prettier-plugin-tailwindcss@0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3))(prettier-plugin-css-order@2.1.2(postcss@8.5.3)(prettier@3.5.3))(prettier-plugin-svelte@3.4.0(prettier@3.5.3)(svelte@5.33.4))(prettier@3.5.3):
     dependencies:
       prettier: 3.5.3
     optionalDependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.4.1(prettier@3.5.3)
+      '@ianvs/prettier-plugin-sort-imports': 4.4.2(prettier@3.5.3)
       prettier-plugin-css-order: 2.1.2(postcss@8.5.3)(prettier@3.5.3)
       prettier-plugin-svelte: 3.4.0(prettier@3.5.3)(svelte@5.33.4)
 
