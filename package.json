@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "svelte-kit sync || echo '' && node .husky/install.js",
+    "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "fmt": "prettier --write .",
@@ -55,9 +55,8 @@
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-svelte": "3.9.1",
     "globals": "16.2.0",
-    "husky": "9.1.7",
     "jsdom": "26.1.0",
-    "lint-staged": "16.1.0",
+    "lefthook": "1.11.13",
     "lucide-svelte": "0.513.0",
     "mode-watcher": "1.0.7",
     "prettier": "3.5.3",
@@ -78,10 +77,5 @@
     "vite": "6.3.5",
     "vitest": "3.2.3"
   },
-  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  }
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }
