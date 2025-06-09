@@ -1,4 +1,0 @@
-{
-  "**/*.{js,mjs,ts,tsx,md,mdx}": ["eslint", "prettier --check"],
-  "**/*.{css,json,yml}": ["prettier --check"]
-}
