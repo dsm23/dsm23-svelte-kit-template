@@ -50,7 +50,7 @@
     "clsx": "2.1.1",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
-    "dotenv": "16.5.0",
+    "dotenv": "16.6.0",
     "eslint": "9.29.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-svelte": "3.9.3",
