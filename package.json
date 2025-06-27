@@ -53,7 +53,7 @@
     "dotenv": "16.6.0",
     "eslint": "9.29.0",
     "eslint-config-prettier": "10.1.5",
-    "eslint-plugin-svelte": "3.9.3",
+    "eslint-plugin-svelte": "3.10.1",
     "globals": "16.2.0",
     "jsdom": "26.1.0",
     "lefthook": "1.11.14",
