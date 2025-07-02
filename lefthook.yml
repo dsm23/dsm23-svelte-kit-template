@@ -3,17 +3,6 @@ pre-commit:
   commands:
     prettier:
       run: ./node_modules/.bin/prettier --check {staged_files}
-      glob:
-        - "*.css"
-        - "*.ts"
-        - "*.js"
-        - "*.tsx"
-        - "*.jsx"
-        - "*.md"
-        - "*.mdx"
-        - "*.json"
-        - "*.yml"
-        - "*.yaml"
 
     eslint:
       run: ./node_modules/.bin/eslint {staged_files}
