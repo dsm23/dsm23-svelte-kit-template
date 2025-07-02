@@ -2,7 +2,7 @@ pre-commit:
   parallel: true
   commands:
     prettier:
-      run: ./node_modules/.bin/prettier --check {staged_files}
+      run: ./node_modules/.bin/prettier --check --ignore-unknown {staged_files}
 
     eslint:
       run: ./node_modules/.bin/eslint {staged_files}
