@@ -19,7 +19,7 @@ jobs:
   smoke-test:
     runs-on: ubuntu-24.04
     container:
-      image: mcr.microsoft.com/playwright:v1.53.2@sha256:60c416740c425693f774300baedb27be5190d12389ed8524d639ca203347258f
+      image: mcr.microsoft.com/playwright:v1.54.0@sha256:18d6adb6aaccf1b0f30eba890069972e089138e4a59ddb5303d7e7290e4e38b6
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49 # v2.12.2
