@@ -9,8 +9,8 @@ FROM node:24.4.1-alpine@sha256:820e86612c21d0636580206d802a726f2595366e1b867e564
 
 # Install dependencies only when needed
 FROM base AS deps
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
-RUN apk add --no-cache libc6-compat
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
+RUN apk add --no-cache gcompat=1.1.0-r4
 WORKDIR /app
 
 ENV LEFTHOOK=0
@@ -18,8 +18,8 @@ ENV LEFTHOOK=0
 # Install dependencies based on the preferred package manager
 COPY package.json pnpm-lock.yaml ./
 
-RUN corepack enable pnpm
-RUN pnpm install --frozen-lockfile
+RUN corepack enable pnpm \
+  && pnpm install --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -27,8 +27,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN corepack enable pnpm
-RUN pnpm run build
+RUN corepack enable pnpm \
+  && pnpm run build
 
 # Production image, copy all the files and run next
 FROM base AS runner
@@ -36,8 +36,8 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 sveltekit
+RUN addgroup --system --gid 1001 nodejs \
+  && adduser --system --uid 1001 sveltekit
 
 COPY --from=builder /app/static ./static
 
