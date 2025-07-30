@@ -36,6 +36,12 @@ lefthook-local.yml
 # Coverage
 coverage/
 
+# Cache Files
+.eslintcache
+.eslintmdcache
+.stylelintcache
+.prettiercache
+
 # Playwright
 /test-results/
 /playwright-report/
