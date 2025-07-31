@@ -1,8 +1,6 @@
-import { sveltekit } from "@sveltejs/kit/vite";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import storybookTest from "@storybook/addon-vitest/vitest-plugin";
-import tailwindcss from "@tailwindcss/vite";
 import { svelteTesting } from "@testing-library/svelte/vite";
 import {
   coverageConfigDefaults,
@@ -16,8 +14,6 @@ const dirname = path.dirname(fileURLToPath(import.meta.url));
 export default mergeConfig(
   viteConfig,
   defineConfig({
-    plugins: [sveltekit(), tailwindcss()],
-
     test: {
       coverage: {
         all: true,
