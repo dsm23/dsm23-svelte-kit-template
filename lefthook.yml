@@ -17,6 +17,7 @@ pre-commit:
         - "*.jsx"
         - "*.md"
         - "*.mdx"
+        - "*.svelte"
 
 prepare-commit-msg:
   commands:
