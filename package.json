@@ -12,7 +12,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
-    "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
+    "lint:js": "eslint \"**/*.{js,mjs,ts,tsx,svelte}\" --report-unused-disable-directives --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint": "run-p lint:js lint:css",
     "test:unit": "vitest --project=client --project=server",
