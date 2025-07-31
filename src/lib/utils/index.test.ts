@@ -1,7 +1,7 @@
 /* eslint-disable no-constant-binary-expression */
 
 import { describe, expect, it } from "vitest";
-import { cn } from "./utils";
+import { cn } from ".";
 
 describe("utils", () => {
   describe("cn", () => {
