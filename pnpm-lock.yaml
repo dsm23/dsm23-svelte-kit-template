@@ -105,8 +105,8 @@ importers:
         specifier: 10.1.8
         version: 10.1.8(eslint@9.32.0(jiti@2.4.2))
       eslint-plugin-storybook:
-        specifier: 9.1.0
-        version: 9.1.0(eslint@9.32.0(jiti@2.4.2))(storybook@9.1.0(@testing-library/dom@10.4.0)(prettier@3.6.2)(vite@7.0.6(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)))(typescript@5.9.2)
+        specifier: 9.1.1
+        version: 9.1.1(eslint@9.32.0(jiti@2.4.2))(storybook@9.1.0(@testing-library/dom@10.4.0)(prettier@3.6.2)(vite@7.0.6(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)))(typescript@5.9.2)
       eslint-plugin-svelte:
         specifier: 3.11.0
         version: 3.11.0(eslint@9.32.0(jiti@2.4.2))(svelte@5.37.3)
@@ -1704,12 +1704,12 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-storybook@9.1.0:
-    resolution: {integrity: sha512-65JgC6HLhHfvq5ip3CcZ8rP9xytxphIsTaeuGwHZVDDJdJ+k3XJ87Cj1yjUirnhG5am+ma4eZBPVwFWdaYC1PA==}
+  eslint-plugin-storybook@9.1.1:
+    resolution: {integrity: sha512-g4/i9yW6cl4TCEMzYyALNvO3d/jB6TDvSs/Pmye7dHDrra2B7dgZJGzmEWILD62brVrLVHNoXgy2dNPtx80kmw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       eslint: '>=8'
-      storybook: ^9.1.0
+      storybook: ^9.1.1
 
   eslint-plugin-svelte@3.11.0:
     resolution: {integrity: sha512-KliWlkieHyEa65aQIkRwUFfHzT5Cn4u3BQQsu3KlkJOs7c1u7ryn84EWaOjEzilbKgttT4OfBURA8Uc4JBSQIw==}
@@ -5059,7 +5059,7 @@ snapshots:
     dependencies:
       eslint: 9.32.0(jiti@2.4.2)
 
-  eslint-plugin-storybook@9.1.0(eslint@9.32.0(jiti@2.4.2))(storybook@9.1.0(@testing-library/dom@10.4.0)(prettier@3.6.2)(vite@7.0.6(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)))(typescript@5.9.2):
+  eslint-plugin-storybook@9.1.1(eslint@9.32.0(jiti@2.4.2))(storybook@9.1.0(@testing-library/dom@10.4.0)(prettier@3.6.2)(vite@7.0.6(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)))(typescript@5.9.2):
     dependencies:
       '@typescript-eslint/utils': 8.38.0(eslint@9.32.0(jiti@2.4.2))(typescript@5.9.2)
       eslint: 9.32.0(jiti@2.4.2)
