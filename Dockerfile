@@ -1,6 +1,6 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:38387523653efa0039f8e1c89bb74a30504e76ee9f565e25c9a09841f9427b05
 
-FROM node:24.5.0-alpine@sha256:e8e882c692a08878d55ec8ff6c5a4a71b3edca25eda0af4406e2a160d8a93cf2 AS base
+FROM node:24.6.0-alpine@sha256:de5947748f6e158bf335c3540e1aab648a5607d5078f35fdb6d5c1c6189dd781 AS base
 
 # corepack is broken https://github.com/nodejs/corepack/issues/612
 # corepack was fixed but is will be removed from node from v25+
