@@ -16,7 +16,7 @@ WORKDIR /app
 ENV LEFTHOOK=0
 
 # Install dependencies based on the preferred package manager
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 RUN corepack enable pnpm \
   && pnpm install --frozen-lockfile

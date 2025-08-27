@@ -1,4 +1,10 @@
 onlyBuiltDependencies:
   - esbuild
   - lefthook
+
+packages:
+  - "**"
+
+savePrefix: ""
+
 sideEffectsCache: false
