@@ -5,6 +5,7 @@
 !index.html
 !package.json
 !pnpm-lock.yaml
+!pnpm-workspace.yaml
 !svelte.config.js
 !tsconfig.*
 !vite.config.ts
