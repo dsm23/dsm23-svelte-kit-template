@@ -22,6 +22,7 @@
       ]
     }
   ],
+  "ignoreDeps": ["ghcr.io/dsm23/dsm23-svelte-kit-template"],
   "packageRules": [
     {
       "extends": ["packages:eslint"],
