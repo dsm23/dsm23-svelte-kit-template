@@ -34,6 +34,7 @@ lefthook-local.yml
 !.env.test
 
 # Coverage
+.vitest-reports/
 coverage/
 
 # Cache Files
