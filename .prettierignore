@@ -7,4 +7,4 @@ yarn.lock
 node_modules/
 build/
 coverage/
-infra/
+infra/templates/**/*.yaml
