@@ -54,7 +54,7 @@
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-storybook": "9.1.5",
     "eslint-plugin-svelte": "3.12.3",
-    "globals": "16.3.0",
+    "globals": "16.4.0",
     "jsdom": "26.1.0",
     "lefthook": "1.13.0",
     "lucide-svelte": "0.544.0",
