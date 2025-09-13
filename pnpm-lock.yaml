@@ -81,8 +81,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(@vitest/browser@3.2.4)(vitest@3.2.4)
       bits-ui:
-        specifier: 2.9.7
-        version: 2.9.7(@internationalized/date@3.7.0)(svelte@5.38.10)
+        specifier: 2.9.8
+        version: 2.9.8(@internationalized/date@3.7.0)(svelte@5.38.10)
       class-variance-authority:
         specifier: 0.7.1
         version: 0.7.1
@@ -1347,8 +1347,8 @@ packages:
     resolution: {integrity: sha512-aVNobHnJqLiUelTaHat9DZ1qM2w0C0Eym4LPI/3JxOnSokGVdsl1T1kN7TFvsEAD8G47A6VKQ0TVHqbBnYMJlQ==}
     engines: {node: '>=12.0.0'}
 
-  bits-ui@2.9.7:
-    resolution: {integrity: sha512-W7Y0ZWyVIYswbMPU2isAKkhhEX79J8wCkgrPRMLLIXeYuw0bu8KXjpYgj7/iGTp5OA4LS+GGVFoIoWaJ+6D29g==}
+  bits-ui@2.9.8:
+    resolution: {integrity: sha512-oVAqdhLSuGIgEiT0yu3ShSI7AxncCxX26Gv6Lul94BuKHV2uzHoKfIodtnMQSq+udJ54svuCIRqA58whsv7vaA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@internationalized/date': ^3.8.1
@@ -4478,7 +4478,7 @@ snapshots:
     dependencies:
       open: 8.4.2
 
-  bits-ui@2.9.7(@internationalized/date@3.7.0)(svelte@5.38.10):
+  bits-ui@2.9.8(@internationalized/date@3.7.0)(svelte@5.38.10):
     dependencies:
       '@floating-ui/core': 1.7.1
       '@floating-ui/dom': 1.7.1
