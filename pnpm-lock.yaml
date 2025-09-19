@@ -81,8 +81,8 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(@vitest/browser@3.2.4)(vitest@3.2.4)
       bits-ui:
-        specifier: 2.9.9
-        version: 2.9.9(@internationalized/date@3.7.0)(svelte@5.39.2)
+        specifier: 2.10.0
+        version: 2.10.0(@internationalized/date@3.7.0)(svelte@5.39.2)
       class-variance-authority:
         specifier: 0.7.1
         version: 0.7.1
@@ -1325,8 +1325,8 @@ packages:
   bidi-js@1.0.3:
     resolution: {integrity: sha512-RKshQI1R3YQ+n9YJz2QQ147P66ELpa1FQEg20Dk8oW9t2KgLbpDLLp9aGZ7y8WHSshDknG0bknqGw5/tyCs5tw==}
 
-  bits-ui@2.9.9:
-    resolution: {integrity: sha512-U8qsCQ/5rwXAzUBn8lCLFUeHBoXsA54Lb4uFuurXu6VEszVXLCedZRnhHOQsTc1I+2Js5l4iLiBtPUG7WjNbOA==}
+  bits-ui@2.10.0:
+    resolution: {integrity: sha512-GOwMUhK0LI+GOMDQKVwd6DdfeAPOpbhvUT/5eUbXF8xRfFTLbax+xlXcbNE8ZUbzKtd8wL6vP6PWSPgT8DYQSg==}
     engines: {node: '>=20'}
     peerDependencies:
       '@internationalized/date': ^3.8.1
@@ -2719,6 +2719,11 @@ packages:
 
   runed@0.29.1:
     resolution: {integrity: sha512-RGQEB8ZiWv4OvzBJhbMj2hMgRM8QrEptzTrDr7TDfkHaRePKjiUka4vJ9QHGY+8s87KymNvFoZAxFdQ4jtZNcA==}
+    peerDependencies:
+      svelte: ^5.7.0
+
+  runed@0.31.1:
+    resolution: {integrity: sha512-v3czcTnO+EJjiPvD4dwIqfTdHLZ8oH0zJheKqAHh9QMViY7Qb29UlAMRpX7ZtHh7AFqV60KmfxaJ9QMy+L1igQ==}
     peerDependencies:
       svelte: ^5.7.0
 
@@ -4410,13 +4415,13 @@ snapshots:
     dependencies:
       require-from-string: 2.0.2
 
-  bits-ui@2.9.9(@internationalized/date@3.7.0)(svelte@5.39.2):
+  bits-ui@2.10.0(@internationalized/date@3.7.0)(svelte@5.39.2):
     dependencies:
       '@floating-ui/core': 1.7.1
       '@floating-ui/dom': 1.7.1
       '@internationalized/date': 3.7.0
       esm-env: 1.2.2
-      runed: 0.29.1(svelte@5.39.2)
+      runed: 0.31.1(svelte@5.39.2)
       svelte: 5.39.2
       svelte-toolbelt: 0.9.3(svelte@5.39.2)
       tabbable: 6.2.0
@@ -5649,6 +5654,11 @@ snapshots:
       svelte: 5.39.2
 
   runed@0.29.1(svelte@5.39.2):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.39.2
+
+  runed@0.31.1(svelte@5.39.2):
     dependencies:
       esm-env: 1.2.2
       svelte: 5.39.2
