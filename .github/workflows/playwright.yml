@@ -26,7 +26,7 @@ jobs:
           [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
         shardTotal: [18]
     container:
-      image: mcr.microsoft.com/playwright:v1.55.1-noble@sha256:2f29369043d81d6d69a815ceb80760f55e85f5020371ad06a4d996f18503ad1c
+      image: mcr.microsoft.com/playwright:v1.56.0-noble@sha256:afce7c3142e8ae183d5398848001d44b397f921babf615dcb09f2502caab7e25
       options: --user 1001
     steps:
       - name: Harden Runner
