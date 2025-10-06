@@ -138,17 +138,17 @@ importers:
         specifier: 9.1.10
         version: 9.1.10(@testing-library/dom@10.4.0)(prettier@3.6.2)(vite@7.1.9(@types/node@22.13.4)(jiti@2.6.1)(lightningcss@1.30.1)(yaml@2.8.0))
       stylelint:
-        specifier: 16.24.0
-        version: 16.24.0(typescript@5.9.3)
+        specifier: 16.25.0
+        version: 16.25.0(typescript@5.9.3)
       stylelint-config-standard:
-        specifier: 39.0.0
-        version: 39.0.0(stylelint@16.24.0(typescript@5.9.3))
+        specifier: 39.0.1
+        version: 39.0.1(stylelint@16.25.0(typescript@5.9.3))
       stylelint-order:
         specifier: 7.0.0
-        version: 7.0.0(stylelint@16.24.0(typescript@5.9.3))
+        version: 7.0.0(stylelint@16.25.0(typescript@5.9.3))
       stylelint-selector-bem-pattern:
         specifier: 4.0.1
-        version: 4.0.1(stylelint@16.24.0(typescript@5.9.3))
+        version: 4.0.1(stylelint@16.25.0(typescript@5.9.3))
       svelte:
         specifier: 5.39.9
         version: 5.39.9
@@ -372,8 +372,8 @@ packages:
     peerDependencies:
       postcss-selector-parser: ^7.0.0
 
-  '@dual-bundle/import-meta-resolve@4.1.0':
-    resolution: {integrity: sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==}
+  '@dual-bundle/import-meta-resolve@4.2.1':
+    resolution: {integrity: sha512-id+7YRUgoUX6CgV0DtuhirQWodeeA7Lf4i2x71JS/vtA5pRb/hIGWlw+G6MeXvsM+MXrz0VAydTGElX1rAfgPg==}
 
   '@esbuild/aix-ppc64@0.25.0':
     resolution: {integrity: sha512-O7vun9Sf8DFjH2UtqK8Ku3LkquL9SZL8OLY1T5NZkA34+wG3OQF7cl4Ql8vdNzM6fzBbYfLaiRLIOZ+2FOCgBQ==}
@@ -1496,6 +1496,15 @@ packages:
 
   debug@4.4.1:
     resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -2832,8 +2841,8 @@ packages:
     peerDependencies:
       stylelint: ^16.23.0
 
-  stylelint-config-standard@39.0.0:
-    resolution: {integrity: sha512-JabShWORb8Bmc1A47ZyJstran60P3yUdI1zWMpGYPeFiC6xzHXJMkpKAd8EjIhq3HPUplIWWMDJ/xu0AiPd+kA==}
+  stylelint-config-standard@39.0.1:
+    resolution: {integrity: sha512-b7Fja59EYHRNOTa3aXiuWnhUWXFU2Nfg6h61bLfAb5GS5fX3LMUD0U5t4S8N/4tpHQg3Acs2UVPR9jy2l1g/3A==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.23.0
@@ -2850,8 +2859,8 @@ packages:
     peerDependencies:
       stylelint: ^16.2.1
 
-  stylelint@16.24.0:
-    resolution: {integrity: sha512-7ksgz3zJaSbTUGr/ujMXvLVKdDhLbGl3R/3arNudH7z88+XZZGNLMTepsY28WlnvEFcuOmUe7fg40Q3lfhOfSQ==}
+  stylelint@16.25.0:
+    resolution: {integrity: sha512-Li0avYWV4nfv1zPbdnxLYBGq4z8DVZxbRgx4Kn6V+Uftz1rMoF1qiEI3oL4kgWqyYgCgs7gT5maHNZ82Gk03vQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -3513,7 +3522,7 @@ snapshots:
     dependencies:
       postcss-selector-parser: 7.1.0
 
-  '@dual-bundle/import-meta-resolve@4.1.0': {}
+  '@dual-bundle/import-meta-resolve@4.2.1': {}
 
   '@esbuild/aix-ppc64@0.25.0':
     optional: true
@@ -4564,6 +4573,10 @@ snapshots:
       whatwg-url: 15.0.0
 
   debug@4.4.1:
+    dependencies:
+      ms: 2.1.3
+
+  debug@4.4.3:
     dependencies:
       ms: 2.1.3
 
@@ -5761,41 +5774,41 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.4
 
-  stylelint-config-recommended@17.0.0(stylelint@16.24.0(typescript@5.9.3)):
+  stylelint-config-recommended@17.0.0(stylelint@16.25.0(typescript@5.9.3)):
     dependencies:
-      stylelint: 16.24.0(typescript@5.9.3)
+      stylelint: 16.25.0(typescript@5.9.3)
 
-  stylelint-config-standard@39.0.0(stylelint@16.24.0(typescript@5.9.3)):
+  stylelint-config-standard@39.0.1(stylelint@16.25.0(typescript@5.9.3)):
     dependencies:
-      stylelint: 16.24.0(typescript@5.9.3)
-      stylelint-config-recommended: 17.0.0(stylelint@16.24.0(typescript@5.9.3))
+      stylelint: 16.25.0(typescript@5.9.3)
+      stylelint-config-recommended: 17.0.0(stylelint@16.25.0(typescript@5.9.3))
 
-  stylelint-order@7.0.0(stylelint@16.24.0(typescript@5.9.3)):
+  stylelint-order@7.0.0(stylelint@16.25.0(typescript@5.9.3)):
     dependencies:
       postcss: 8.5.6
       postcss-sorting: 9.1.0(postcss@8.5.6)
-      stylelint: 16.24.0(typescript@5.9.3)
+      stylelint: 16.25.0(typescript@5.9.3)
 
-  stylelint-selector-bem-pattern@4.0.1(stylelint@16.24.0(typescript@5.9.3)):
+  stylelint-selector-bem-pattern@4.0.1(stylelint@16.25.0(typescript@5.9.3)):
     dependencies:
       lodash: 4.17.21
       postcss: 8.5.6
       postcss-bem-linter: 4.0.1(postcss@8.5.6)
-      stylelint: 16.24.0(typescript@5.9.3)
+      stylelint: 16.25.0(typescript@5.9.3)
 
-  stylelint@16.24.0(typescript@5.9.3):
+  stylelint@16.25.0(typescript@5.9.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
       '@csstools/media-query-list-parser': 4.0.3(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.0)
-      '@dual-bundle/import-meta-resolve': 4.1.0
+      '@dual-bundle/import-meta-resolve': 4.2.1
       balanced-match: 2.0.0
       colord: 2.9.3
       cosmiconfig: 9.0.0(typescript@5.9.3)
       css-functions-list: 3.2.3
       css-tree: 3.1.0
-      debug: 4.4.1
+      debug: 4.4.3
       fast-glob: 3.3.3
       fastest-levenshtein: 1.0.16
       file-entry-cache: 10.1.4
