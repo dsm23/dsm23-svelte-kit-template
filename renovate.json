@@ -55,8 +55,15 @@
         "playwright",
         "@playwright/test",
         "mcr.microsoft.com/playwright"
-      ],
-      "matchUpdateTypes": ["digest", "patch", "minor", "major"]
+      ]
+    },
+    {
+      "groupName": "storybook monorepo",
+      "matchPackageNames": [
+        "@storybook/**",
+        "eslint-plugin-storybook",
+        "storybook"
+      ]
     }
   ],
   "rebaseWhen": "conflicted",
