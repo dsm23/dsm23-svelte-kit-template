@@ -42,11 +42,14 @@
     WithElementRef<HTMLAnchorAttributes> & {
       variant?: ButtonVariant;
       size?: ButtonSize;
+      href?: Pathname | null;
     };
 </script>
 
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import { cn } from "$lib/utils";
+  import type { Pathname } from "$app/types";
 
   let {
     class: className,
@@ -64,7 +67,7 @@
   <a
     bind:this={ref}
     class={cn(buttonVariants({ variant, size }), className)}
-    {href}
+    href={resolve(href)}
     {...restProps}
   >
     {@render children?.()}
