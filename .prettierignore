@@ -1,10 +1,2 @@
-# Package Managers
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
-
-.svelte-kit/
-node_modules/
-build/
-coverage/
 infra/templates/**/*.yaml
+pnpm-lock.yaml
