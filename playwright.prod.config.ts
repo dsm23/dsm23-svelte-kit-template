@@ -35,11 +35,9 @@ export default defineConfig({
     baseURL: `http://localhost:${PORT}`,
   },
   /* Run your local build server before starting the tests */
-  webServer: [
-    {
-      command: `pnpm run build && pnpm run preview --port ${PORT}`,
-      url: `http://localhost:${PORT}`,
-      reuseExistingServer: !process.env.CI,
-    },
-  ],
+  webServer: {
+    command: `pnpm run build && pnpm run preview --port ${PORT}`,
+    url: `http://localhost:${PORT}`,
+    reuseExistingServer: !process.env.CI,
+  },
 });

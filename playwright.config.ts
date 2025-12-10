@@ -52,11 +52,9 @@ export default defineConfig({
       use: { ...devices["Desktop Safari"] },
     },
   ],
-  webServer: [
-    {
-      command: `pnpm run dev --port ${PORT}`,
-      url: `http://localhost:${PORT}`,
-      reuseExistingServer: !process.env.CI,
-    },
-  ],
+  webServer: {
+    command: `pnpm run dev --port ${PORT}`,
+    url: `http://localhost:${PORT}`,
+    reuseExistingServer: !process.env.CI,
+  },
 });
