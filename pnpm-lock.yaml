@@ -30,8 +30,8 @@ importers:
         specifier: 9.38.0
         version: 9.38.0
       '@fast-check/vitest':
-        specifier: 0.2.3
-        version: 0.2.3(vitest@3.2.4)
+        specifier: 0.2.4
+        version: 0.2.4(vitest@3.2.4)
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
         version: 4.7.0(prettier@3.7.4)
@@ -589,8 +589,8 @@ packages:
     resolution: {integrity: sha512-sB5uyeq+dwCWyPi31B2gQlVlo+j5brPlWx4yZBrEaRo/nhdDE8Xke1gsGgtiBdaBTxuTkceLVuVt/pclrasb0A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fast-check/vitest@0.2.3':
-    resolution: {integrity: sha512-BBjiZOiCvKRfoeuWz62ZpjFfuaLEKSDWXl7Fkli9FBNJGUzBDv7PZdXPGbrUiaTreIFs9I1INrlQgboRBA3H1Q==}
+  '@fast-check/vitest@0.2.4':
+    resolution: {integrity: sha512-Ilcr+JAIPhb1s6FRm4qoglQYSGXXrS+zAupZeNuWAA3qHVGDA1d1Gb84Hb/+otL3GzVZjFJESg5/1SfIvrgssA==}
     peerDependencies:
       vitest: ^1 || ^2 || ^3 || ^4
 
@@ -3655,7 +3655,7 @@ snapshots:
       '@eslint/core': 0.16.0
       levn: 0.4.1
 
-  '@fast-check/vitest@0.2.3(vitest@3.2.4)':
+  '@fast-check/vitest@0.2.4(vitest@3.2.4)':
     dependencies:
       fast-check: 4.2.0
       vitest: 3.2.4(@types/node@22.13.4)(@vitest/browser@3.2.4)(jiti@2.6.1)(jsdom@27.2.0(postcss@8.5.6))(lightningcss@1.30.2)(yaml@2.8.0)
