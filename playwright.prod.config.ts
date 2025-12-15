@@ -34,7 +34,7 @@ export default defineConfig({
     ...config.use,
     baseURL: `http://localhost:${PORT}`,
   },
-  /* Run your local build server before starting the tests */
+  tag: "@prod",
   webServer: {
     command: `pnpm run build && pnpm run preview --port ${PORT}`,
     url: `http://localhost:${PORT}`,
