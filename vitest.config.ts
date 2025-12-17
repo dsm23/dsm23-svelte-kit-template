@@ -1,7 +1,6 @@
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import storybookTest from "@storybook/addon-vitest/vitest-plugin";
-import { svelteTesting } from "@testing-library/svelte/vite";
+import { playwright } from "@vitest/browser-playwright";
 import {
   coverageConfigDefaults,
   defineConfig,
@@ -9,14 +8,11 @@ import {
 } from "vitest/config";
 import viteConfig from "./vite.config";
 
-const dirname = path.dirname(fileURLToPath(import.meta.url));
-
 export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
       coverage: {
-        all: true,
         include: ["src/**/*.svelte", "src/**/*.[jt]s?(x)"],
         exclude: [
           "src/**/*.stories.svelte",
@@ -34,22 +30,27 @@ export default mergeConfig(
           statements: 10,
         },
       },
+      globals: false,
+      logHeapUsage: true,
       projects: [
         {
-          extends: "./vite.config.ts",
-          plugins: [svelteTesting()],
-
+          extends: true,
+          resolve: process.env.VITEST
+            ? {
+                conditions: ["browser"],
+              }
+            : undefined,
           test: {
             name: "client",
-            environment: "jsdom",
             clearMocks: true,
+            environment: "jsdom",
             include: ["src/**/*.svelte.{test,spec}.{js,ts}"],
             exclude: ["src/lib/server/**"],
             setupFiles: ["./vitest-setup-client.ts"],
           },
         },
         {
-          extends: "./vite.config.ts",
+          extends: true,
           test: {
             name: "server",
             environment: "node",
@@ -58,18 +59,20 @@ export default mergeConfig(
           },
         },
         {
-          extends: "./vite.config.ts",
+          extends: true,
           plugins: [
             // The plugin will run tests for the stories defined in your Storybook config
             // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
-            storybookTest({ configDir: path.join(dirname, ".storybook") }),
+            storybookTest({
+              configDir: path.join(import.meta.dirname, ".storybook"),
+            }),
           ],
           test: {
             name: "storybook",
             browser: {
               enabled: true,
               headless: true,
-              provider: "playwright",
+              provider: playwright(),
               instances: [{ browser: "chromium" }],
             },
             setupFiles: [".storybook/vitest.setup.ts"],
