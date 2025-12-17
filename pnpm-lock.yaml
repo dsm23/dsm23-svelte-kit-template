@@ -129,11 +129,11 @@ importers:
         specifier: 2.1.2
         version: 2.1.2(postcss@8.5.6)(prettier@3.7.4)
       prettier-plugin-svelte:
-        specifier: 3.4.0
-        version: 3.4.0(prettier@3.7.4)(svelte@5.46.0)
+        specifier: 3.4.1
+        version: 3.4.1(prettier@3.7.4)(svelte@5.46.0)
       prettier-plugin-tailwindcss:
         specifier: 0.7.2
-        version: 0.7.2(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.4))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.7.4))(prettier-plugin-svelte@3.4.0(prettier@3.7.4)(svelte@5.46.0))(prettier@3.7.4)
+        version: 0.7.2(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.4))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.7.4))(prettier-plugin-svelte@3.4.1(prettier@3.7.4)(svelte@5.46.0))(prettier@3.7.4)
       storybook:
         specifier: 10.1.8
         version: 10.1.8(@testing-library/dom@10.4.0)(prettier@3.7.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -2615,8 +2615,8 @@ packages:
     peerDependencies:
       prettier: 3.x
 
-  prettier-plugin-svelte@3.4.0:
-    resolution: {integrity: sha512-pn1ra/0mPObzqoIQn/vUTR3ZZI6UuZ0sHqMK5x2jMLGrs53h0sXhkVuDcrlssHwIMk7FYrMjHBPoUSyyEEDlBQ==}
+  prettier-plugin-svelte@3.4.1:
+    resolution: {integrity: sha512-xL49LCloMoZRvSwa6IEdN2GV6cq2IqpYGstYtMT+5wmml1/dClEoI0MZR78MiVPpu6BdQFfN0/y73yO6+br5Pg==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
@@ -5686,18 +5686,18 @@ snapshots:
     transitivePeerDependencies:
       - postcss
 
-  prettier-plugin-svelte@3.4.0(prettier@3.7.4)(svelte@5.46.0):
+  prettier-plugin-svelte@3.4.1(prettier@3.7.4)(svelte@5.46.0):
     dependencies:
       prettier: 3.7.4
       svelte: 5.46.0
 
-  prettier-plugin-tailwindcss@0.7.2(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.4))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.7.4))(prettier-plugin-svelte@3.4.0(prettier@3.7.4)(svelte@5.46.0))(prettier@3.7.4):
+  prettier-plugin-tailwindcss@0.7.2(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.4))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.7.4))(prettier-plugin-svelte@3.4.1(prettier@3.7.4)(svelte@5.46.0))(prettier@3.7.4):
     dependencies:
       prettier: 3.7.4
     optionalDependencies:
       '@ianvs/prettier-plugin-sort-imports': 4.7.0(prettier@3.7.4)
       prettier-plugin-css-order: 2.1.2(postcss@8.5.6)(prettier@3.7.4)
-      prettier-plugin-svelte: 3.4.0(prettier@3.7.4)(svelte@5.46.0)
+      prettier-plugin-svelte: 3.4.1(prettier@3.7.4)(svelte@5.46.0)
 
   prettier@3.7.4: {}
 
