@@ -69,7 +69,7 @@
     "stylelint-order": "7.0.0",
     "stylelint-selector-bem-pattern": "4.0.1",
     "svelte": "5.46.0",
-    "svelte-check": "4.3.4",
+    "svelte-check": "4.3.5",
     "svelte-radix": "3.0.2",
     "tailwind-merge": "3.4.0",
     "tailwind-variants": "3.2.2",
