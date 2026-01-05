@@ -7,5 +7,3 @@ onlyBuiltDependencies:
 savePrefix: ""
 
 sideEffectsCache: false
-
-trustPolicy: no-downgrade
