@@ -45,7 +45,7 @@
     "@total-typescript/ts-reset": "0.6.1",
     "@vitest/browser-playwright": "4.0.16",
     "@vitest/coverage-v8": "4.0.16",
-    "bits-ui": "2.15.3",
+    "bits-ui": "2.15.4",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "dotenv": "17.2.3",
