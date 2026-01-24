@@ -1,11 +1,7 @@
 import path from "node:path";
 import storybookTest from "@storybook/addon-vitest/vitest-plugin";
 import { playwright } from "@vitest/browser-playwright";
-import {
-  coverageConfigDefaults,
-  defineConfig,
-  mergeConfig,
-} from "vitest/config";
+import { defineConfig, mergeConfig } from "vitest/config";
 import viteConfig from "./vite.config";
 
 export default mergeConfig(
@@ -21,7 +17,7 @@ export default mergeConfig(
           "src/mocks/**",
           "**/node_modules/**",
           "**/e2e/**",
-          ...coverageConfigDefaults.exclude,
+          "**/*.d.ts",
         ],
         thresholds: {
           lines: 10,
