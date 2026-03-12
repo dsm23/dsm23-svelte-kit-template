@@ -16,6 +16,7 @@ const Trigger = DropdownMenuPrimitive.Trigger;
 const Group = DropdownMenuPrimitive.Group;
 const RadioGroup = DropdownMenuPrimitive.RadioGroup;
 
+/** @knipignore */
 export {
   CheckboxItem,
   Content,
