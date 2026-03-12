@@ -1,6 +1,7 @@
 import Root, { buttonVariants } from "./button.svelte";
 import type { ButtonProps, ButtonSize, ButtonVariant } from "./button.svelte";
 
+/** @knipignore */
 export {
   Root,
   type ButtonProps as Props,
