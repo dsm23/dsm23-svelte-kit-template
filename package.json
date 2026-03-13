@@ -51,7 +51,7 @@
     "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-storybook": "10.2.17",
-    "eslint-plugin-svelte": "3.15.0",
+    "eslint-plugin-svelte": "3.15.2",
     "globals": "17.4.0",
     "jsdom": "28.1.0",
     "knip": "5.86.0",
@@ -76,7 +76,7 @@
     "tailwindcss-animate": "1.0.7",
     "typed-query-selector": "2.12.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.56.1",
+    "typescript-eslint": "8.57.0",
     "vite": "7.3.1",
     "vitest": "4.0.18"
   },
