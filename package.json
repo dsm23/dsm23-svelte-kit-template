@@ -51,7 +51,7 @@
     "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-storybook": "10.2.19",
-    "eslint-plugin-svelte": "3.15.2",
+    "eslint-plugin-svelte": "3.16.0",
     "globals": "17.4.0",
     "jsdom": "29.0.1",
     "knip": "5.88.1",
