@@ -9,14 +9,12 @@ export default mergeConfig(
   defineConfig({
     test: {
       coverage: {
-        include: ["src/**/*.svelte", "src/**/*.[jt]s?(x)"],
+        include: ["src/**/*.svelte", "src/**/*.[jt]s"],
         exclude: [
           "src/**/*.stories.svelte",
           "src/**/*.test.svelte",
           "src/test-utils/**",
           "src/mocks/**",
-          "**/node_modules/**",
-          "**/e2e/**",
           "**/*.d.ts",
         ],
         thresholds: {
@@ -25,6 +23,9 @@ export default mergeConfig(
           branches: 10,
           statements: 10,
         },
+      },
+      expect: {
+        requireAssertions: true,
       },
       globals: false,
       logHeapUsage: true,
@@ -71,7 +72,6 @@ export default mergeConfig(
               provider: playwright(),
               instances: [{ browser: "chromium" }],
             },
-            setupFiles: [".storybook/vitest.setup.ts"],
           },
         },
       ],
