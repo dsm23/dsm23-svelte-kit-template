@@ -54,7 +54,7 @@
     "eslint-plugin-svelte": "3.16.0",
     "globals": "17.4.0",
     "jsdom": "29.0.1",
-    "knip": "6.0.5",
+    "knip": "6.0.6",
     "lefthook": "2.1.4",
     "lucide-svelte": "1.0.1",
     "mode-watcher": "1.1.0",
