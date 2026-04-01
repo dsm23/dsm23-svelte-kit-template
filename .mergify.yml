@@ -91,4 +91,3 @@ pull_request_rules:
       label:
         add:
           - rebase
-
