@@ -119,7 +119,7 @@ jobs:
           path: ./coverage-prev
 
       - name: Coverage in GitHub PR comment
-        uses: davelosert/vitest-coverage-report-action@bd52af59d9cd548ea7cd405044d2458042e6d888 # v2.10.0
+        uses: davelosert/vitest-coverage-report-action@c0c9b09c93750ee1d8335d14e94ce3d6fc61df50 # v2.11.0
         with:
           file-coverage-mode: all
           json-summary-compare-path: |
