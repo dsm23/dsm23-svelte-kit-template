@@ -76,7 +76,7 @@
     "tailwindcss-animate": "1.0.7",
     "typed-query-selector": "2.12.1",
     "typescript": "6.0.2",
-    "typescript-eslint": "8.58.0",
+    "typescript-eslint": "8.58.1",
     "vite": "8.0.7",
     "vitest": "4.1.3"
   },
