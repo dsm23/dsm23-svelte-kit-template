@@ -45,7 +45,7 @@
     "@total-typescript/ts-reset": "0.6.1",
     "@vitest/browser-playwright": "4.1.4",
     "@vitest/coverage-v8": "4.1.4",
-    "bits-ui": "2.17.3",
+    "bits-ui": "2.18.0",
     "clsx": "2.1.1",
     "dotenv": "17.4.2",
     "eslint": "10.2.0",
