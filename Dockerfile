@@ -1,6 +1,7 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:2780b5c3bab67f1f76c781860de469442999ed1a0d7992a5efdf2cffc0e3d769
 
 FROM node:24.15.0-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f AS base
+FROM dhi.io/node:24.15.0@sha256:c4db36449d7ad1a2e97a91750673da63212edd5a2ebd6fe458b381191e0c424e AS hardened
 
 # corepack is broken https://github.com/nodejs/corepack/issues/612
 # corepack was fixed but is will be removed from node from v25+
@@ -31,22 +32,17 @@ RUN corepack enable pnpm \
   && pnpm run build
 
 # Production image, copy all the files and run next
-FROM base AS runner
+FROM hardened AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-
-RUN addgroup --system --gid 1001 nodejs \
-  && adduser --system --uid 1001 sveltekit
 
 COPY --from=builder /app/static ./static
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=builder --chown=sveltekit:nodejs /app/.svelte-kit ./.svelte-kit
-COPY --from=builder --chown=sveltekit:nodejs /app/build ./build
-
-USER sveltekit
+COPY --from=builder /app/.svelte-kit ./.svelte-kit
+COPY --from=builder /app/build ./build
 
 EXPOSE 3000
 
@@ -55,4 +51,4 @@ ENV PORT=3000
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
 ENV HOSTNAME="0.0.0.0"
-CMD ["node", "build"]
+CMD ["node", "run", "build"]
