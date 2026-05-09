@@ -1,7 +1,7 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:2780b5c3bab67f1f76c781860de469442999ed1a0d7992a5efdf2cffc0e3d769
 
 FROM node:24.15.0-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f AS base
-FROM dhi.io/node:24.15.0@sha256:c4db36449d7ad1a2e97a91750673da63212edd5a2ebd6fe458b381191e0c424e AS hardened
+FROM dhi.io/node:24.15.0@sha256:53af386f9d5b82263daece3148a1dc61ec578e0c83c79eeccbe54c8ca5cc3e45 AS hardened
 
 # corepack is broken https://github.com/nodejs/corepack/issues/612
 # corepack was fixed but is will be removed from node from v25+
