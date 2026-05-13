@@ -42,7 +42,6 @@
       "password": "{{ secrets.MEND_DOCKER_HUB_PASSWORD }}"
     }
   ],
-  "ignoreDeps": ["ghcr.io/dsm23/dsm23-svelte-kit-template"],
   "packageRules": [
     {
       "description": "Apply minimum release age to all relevant datasources with timestamps",
