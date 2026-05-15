@@ -1,8 +1,8 @@
-blockExoticSubdeps: true
+allowBuilds:
+  esbuild: false
+  lefthook: true
 
-onlyBuiltDependencies:
-  - esbuild
-  - lefthook
+blockExoticSubdeps: true
 
 savePrefix: ""
 

@@ -1,17 +1,14 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:2780b5c3bab67f1f76c781860de469442999ed1a0d7992a5efdf2cffc0e3d769
 
-FROM node:24.15.0-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f AS base
-FROM dhi.io/node:24.15.0@sha256:36c6a39aadb0d2d10180e0fb0e653966457480afc6b02b0669656757d5c8da5b AS hardened
+FROM ghcr.io/pnpm/pnpm:11.1.1@sha256:2ae5576f1e7dfb11a947c71faa61533c1089859bfc6766270ae7d102f55f71fa AS base
+FROM dhi.io/node:26.1.0-alpine3.23@sha256:89ba306d54a9025da2e7862ff22ae13a95d825a0e459217138242115dfc700a5 AS runtime
 
-# corepack is broken https://github.com/nodejs/corepack/issues/612
-# corepack was fixed but is will be removed from node from v25+
-# TODO: re-add corepack after it's been removed
-# RUN npm install -g corepack@latest
+# renovate: datasource=docker depName=dhi.io/node
+ARG NODE_VERSION="26.1.0"
 
-# Install dependencies only when needed
+# Stage 1: Install dependencies only when needed
 FROM base AS deps
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why gcompat might be needed.
-RUN apk add --no-cache gcompat=1.1.0-r4
+
 WORKDIR /app
 
 ENV LEFTHOOK=0
@@ -19,20 +16,23 @@ ENV LEFTHOOK=0
 # Install dependencies based on the preferred package manager
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
-RUN corepack enable pnpm \
-  && pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+  pnpm runtime set node "$NODE_VERSION" -g && pnpm install --frozen-lockfile
 
-# Rebuild the source code only when needed
+# Stage 2: Build stage
 FROM base AS builder
+
 WORKDIR /app
+
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN corepack enable pnpm \
+RUN pnpm runtime set node "$NODE_VERSION" -g \
   && pnpm run build
 
-# Production image, copy all the files and run next
-FROM hardened AS runner
+# Stage 3: Production image
+FROM runtime
+
 WORKDIR /app
 
 ENV NODE_ENV=production
@@ -51,4 +51,4 @@ ENV PORT=3000
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
 ENV HOSTNAME="0.0.0.0"
-CMD ["node", "run", "build"]
+CMD ["node", "build"]
