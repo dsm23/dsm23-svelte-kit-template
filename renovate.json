@@ -3,9 +3,9 @@
   "extends": [
     "config:best-practices",
     "customManagers:dockerfileVersions",
-    "group:jsUnitTest",
-    "group:vite",
+    "group:all",
     "helpers:pinGitHubActionDigestsToSemver",
+    "schedule:daily",
     "security:openssf-scorecard",
     ":approveMajorUpdates",
     ":enableVulnerabilityAlerts",
@@ -60,52 +60,6 @@
       "matchDatasources": ["docker"],
       "minimumReleaseAge": "3 days",
       "minimumReleaseAgeBehaviour": "timestamp-optional"
-    },
-    {
-      "extends": ["packages:eslint"],
-      "groupName": "eslint packages"
-    },
-    {
-      "groupName": "prettier packages",
-      "matchPackageNames": ["prettier**", "@ianvs/prettier-plugin-sort-imports"]
-    },
-    {
-      "extends": ["packages:react"],
-      "groupName": "react packages"
-    },
-    {
-      "extends": ["packages:stylelint"],
-      "groupName": "stylelint packages"
-    },
-    {
-      "description": "Force pnpm Docker to use GitHub timestamps",
-      "matchPackageNames": ["ghcr.io/pnpm/pnpm"],
-      "matchDatasources": ["docker"],
-      "overrideDatasource": "npm",
-      "overridePackageName": "pnpm"
-    },
-    {
-      "groupName": "playwright monorepo",
-      "matchPackageNames": [
-        "playwright",
-        "@playwright/test",
-        "mcr.microsoft.com/playwright"
-      ]
-    },
-    {
-      "description": "Force Playwright Docker to use GitHub timestamps",
-      "matchPackageNames": ["mcr.microsoft.com/playwright"],
-      "matchDatasources": ["docker"],
-      "overrideDatasource": "github-releases",
-      "overridePackageName": "microsoft/playwright"
-    },
-    {
-      "groupName": "storybook monorepo",
-      "matchPackageNames": [
-        "@storybook/**",
-        "eslint-plugin-storybook",
-        "storybook"
-      ]
     }
   ],
   "rebaseWhen": "conflicted",
