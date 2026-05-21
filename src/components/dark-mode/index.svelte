@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Laptop from "lucide-svelte/icons/laptop";
-  import Moon from "lucide-svelte/icons/moon";
-  import Sun from "lucide-svelte/icons/sun";
+  import Laptop from "@lucide/svelte/icons/laptop";
+  import Moon from "@lucide/svelte/icons/moon";
+  import Sun from "@lucide/svelte/icons/sun";
   import { setMode, userPrefersMode } from "mode-watcher";
   import { buttonVariants } from "~/components/ui/button/";
   import * as DropdownMenu from "~/components/ui/dropdown-menu";
