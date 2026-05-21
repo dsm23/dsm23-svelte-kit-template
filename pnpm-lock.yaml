@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@lucide/svelte':
+        specifier: 1.16.0
+        version: 1.16.0(svelte@5.55.7(@typescript-eslint/types@8.59.3))
     devDependencies:
       '@axe-core/playwright':
         specifier: 4.11.3
@@ -110,9 +114,6 @@ importers:
       lefthook:
         specifier: 2.1.6
         version: 2.1.6
-      lucide-svelte:
-        specifier: 1.0.1
-        version: 1.0.1(svelte@5.55.7(@typescript-eslint/types@8.59.3))
       mode-watcher:
         specifier: 1.1.0
         version: 1.1.0(svelte@5.55.7(@typescript-eslint/types@8.59.3))
@@ -700,6 +701,11 @@ packages:
 
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
+
+  '@lucide/svelte@1.16.0':
+    resolution: {integrity: sha512-AvvPJnaWxeiNkAljI5MsSEc84yHPLMaWQIAJOcbX7k9au/f9ITS7cxTTQiautDiOFKVOXiYdZ+d6mtl88J+Kbg==}
+    peerDependencies:
+      svelte: ^5
 
   '@mdx-js/react@3.1.1':
     resolution: {integrity: sha512-f++rKLQgUVYDAtECQ6fn/is15GkEH9+nZPM3MS0RcxVqoTfawHvDlSCH7JbMhAM6uJ32v3eXLvLmLvjGu7PTQw==}
@@ -2800,12 +2806,6 @@ packages:
     resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
     engines: {node: 20 || >=22}
 
-  lucide-svelte@1.0.1:
-    resolution: {integrity: sha512-WvzZgk0pqzgda+AErLvgWxHkfg/+GgUwqKMRHvzt0IqyMdmyEDzDCk3Z+Wo/3y753oIgx8u9Q4eUbWkghFa8Jg==}
-    deprecated: Package deprecated. Please use @lucide/svelte instead.
-    peerDependencies:
-      svelte: ^3 || ^4 || ^5.0.0-next.42
-
   lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
     hasBin: true
@@ -4254,6 +4254,10 @@ snapshots:
       keyv: 5.6.0
 
   '@keyv/serialize@1.1.1': {}
+
+  '@lucide/svelte@1.16.0(svelte@5.55.7(@typescript-eslint/types@8.59.3))':
+    dependencies:
+      svelte: 5.55.7(@typescript-eslint/types@8.59.3)
 
   '@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.6)':
     dependencies:
@@ -6068,10 +6072,6 @@ snapshots:
   loupe@3.2.1: {}
 
   lru-cache@11.3.6: {}
-
-  lucide-svelte@1.0.1(svelte@5.55.7(@typescript-eslint/types@8.59.3)):
-    dependencies:
-      svelte: 5.55.7(@typescript-eslint/types@8.59.3)
 
   lz-string@1.5.0: {}
 
