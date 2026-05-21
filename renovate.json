@@ -60,6 +60,15 @@
       "matchDatasources": ["docker"],
       "minimumReleaseAge": "3 days",
       "minimumReleaseAgeBehaviour": "timestamp-optional"
+    },
+    {
+      "groupName": "playwright monorepo",
+      "matchUpdateTypes": ["major", "minor"],
+      "matchPackageNames": [
+        "playwright",
+        "@playwright/test",
+        "mcr.microsoft.com/playwright"
+      ]
     }
   ],
   "rebaseWhen": "conflicted",
