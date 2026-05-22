@@ -3,7 +3,6 @@
   "extends": [
     "config:best-practices",
     "customManagers:dockerfileVersions",
-    "group:all",
     "helpers:pinGitHubActionDigestsToSemver",
     "schedule:daily",
     "security:openssf-scorecard",
@@ -60,6 +59,22 @@
       "matchDatasources": ["docker"],
       "minimumReleaseAge": "3 days",
       "minimumReleaseAgeBehaviour": "timestamp-optional"
+    },
+    {
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-non-major",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump",
+        "replacement"
+      ]
     },
     {
       "groupName": "playwright monorepo",
