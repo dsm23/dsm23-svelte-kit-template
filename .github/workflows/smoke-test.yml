@@ -16,7 +16,7 @@ permissions: {}
 
 jobs:
   smoke-test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.60.0@sha256:9bd26ad900bb5e0f4dee75839e957a89ae89c2b7ab1e76050e559790e946b948
       options: --user 1001
