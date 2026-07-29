@@ -80,6 +80,6 @@
   },
   "packageManager": "pnpm@11.17.0",
   "dependencies": {
-    "@lucide/svelte": "1.26.0"
+    "@lucide/svelte": "1.27.0"
   }
 }
