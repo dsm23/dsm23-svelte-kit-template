@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@lucide/svelte':
-        specifier: 1.26.0
-        version: 1.26.0(svelte@5.56.8(@typescript-eslint/types@8.65.0))
+        specifier: 1.27.0
+        version: 1.27.0(svelte@5.56.8(@typescript-eslint/types@8.65.0))
     devDependencies:
       '@axe-core/playwright':
         specifier: 4.12.1
@@ -715,8 +715,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@lucide/svelte@1.26.0':
-    resolution: {integrity: sha512-KUfLTlNRVrHZ460Um7jdrvh46hI/8Sw4+1k/Ttj4g6JI9bCrjD7HZVG4cqhh7LasjfDz5b+CuKrjd/k/3obYcA==}
+  '@lucide/svelte@1.27.0':
+    resolution: {integrity: sha512-qzNBHdqy/MKp2qxuy/DcYELuep6h19fjo+4ech8fZsS4GtZeBtg5jgCTRQvLvwhppt0mhRN6qt8Nt8rPb/J4Ag==}
     peerDependencies:
       svelte: ^5
 
@@ -4359,7 +4359,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lucide/svelte@1.26.0(svelte@5.56.8(@typescript-eslint/types@8.65.0))':
+  '@lucide/svelte@1.27.0(svelte@5.56.8(@typescript-eslint/types@8.65.0))':
     dependencies:
       svelte: 5.56.8(@typescript-eslint/types@8.65.0)
 
