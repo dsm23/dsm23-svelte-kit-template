@@ -103,8 +103,8 @@ importers:
         specifier: 3.22.0
         version: 3.22.0(eslint@10.8.0(jiti@2.7.0)(supports-color@10.2.2))(svelte@5.56.8(@typescript-eslint/types@8.65.0))
       globals:
-        specifier: 17.7.0
-        version: 17.7.0
+        specifier: 17.8.0
+        version: 17.8.0
       jsdom:
         specifier: 29.1.1
         version: 29.1.1
@@ -154,8 +154,8 @@ importers:
         specifier: 3.6.0
         version: 3.6.0
       tailwind-variants:
-        specifier: 3.2.2
-        version: 3.2.2(tailwind-merge@3.6.0)(tailwindcss@4.3.3)
+        specifier: 3.3.0
+        version: 3.3.0(tailwind-merge@3.6.0)(tailwindcss@4.3.3)
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -2423,8 +2423,8 @@ packages:
     resolution: {integrity: sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ==}
     engines: {node: '>=18'}
 
-  globals@17.7.0:
-    resolution: {integrity: sha512-Czmyns5dUsq4seFBR/Kdydhmo8y9kC79hiSkPn0YcGtNnYWnrgt0vjrSjx9tspoDGWm2CMarffRuLjM4xUz8xg==}
+  globals@17.8.0:
+    resolution: {integrity: sha512-Zz/LMDZScFmkakeL2cTHzf+PbWKdpU3uclqkZT7TjDG58j5WPt0PpA+n9uPI24fZtlw07q0OtEi84K+umsRzqQ==}
     engines: {node: '>=18'}
 
   globby@16.2.2:
@@ -3509,14 +3509,16 @@ packages:
   tailwind-merge@3.6.0:
     resolution: {integrity: sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==}
 
-  tailwind-variants@3.2.2:
-    resolution: {integrity: sha512-Mi4kHeMTLvKlM98XPnK+7HoBPmf4gygdFmqQPaDivc3DpYS6aIY6KiG/PgThrGvii5YZJqRsPz0aPyhoFzmZgg==}
-    engines: {node: '>=16.x', pnpm: '>=7.x'}
+  tailwind-variants@3.3.0:
+    resolution: {integrity: sha512-t1QsB42dcwUdaCEArO0tRZcP0nbCcAmJKRYCs7jmwYSFOCXlGqgO8c0TrCYm9OranYmT6i9YOi8LFo2gxmxnow==}
+    engines: {node: '>=16.9.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwind-merge: '>=3.0.0'
       tailwindcss: '*'
     peerDependenciesMeta:
       tailwind-merge:
+        optional: true
+      tailwindcss:
         optional: true
 
   tailwindcss-animate@1.0.7:
@@ -5846,7 +5848,7 @@ snapshots:
 
   globals@16.5.0: {}
 
-  globals@17.7.0: {}
+  globals@17.8.0: {}
 
   globby@16.2.2:
     dependencies:
@@ -6905,11 +6907,10 @@ snapshots:
 
   tailwind-merge@3.6.0: {}
 
-  tailwind-variants@3.2.2(tailwind-merge@3.6.0)(tailwindcss@4.3.3):
-    dependencies:
-      tailwindcss: 4.3.3
+  tailwind-variants@3.3.0(tailwind-merge@3.6.0)(tailwindcss@4.3.3):
     optionalDependencies:
       tailwind-merge: 3.6.0
+      tailwindcss: 4.3.3
 
   tailwindcss-animate@1.0.7(tailwindcss@4.3.3):
     dependencies:
