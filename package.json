@@ -36,7 +36,7 @@
     "@storybook/addon-vitest": "10.5.5",
     "@storybook/sveltekit": "10.5.5",
     "@sveltejs/adapter-node": "5.5.7",
-    "@sveltejs/kit": "2.70.1",
+    "@sveltejs/kit": "2.70.2",
     "@sveltejs/vite-plugin-svelte": "7.2.0",
     "@tailwindcss/vite": "4.3.3",
     "@testing-library/jest-dom": "6.9.1",
@@ -78,7 +78,7 @@
     "vite": "8.1.5",
     "vitest": "4.1.10"
   },
-  "packageManager": "pnpm@11.17.0",
+  "packageManager": "pnpm@11.18.0",
   "dependencies": {
     "@lucide/svelte": "1.27.0"
   }
