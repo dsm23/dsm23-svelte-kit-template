@@ -30,7 +30,7 @@
     "@eslint/js": "10.0.1",
     "@fast-check/vitest": "0.4.1",
     "@ianvs/prettier-plugin-sort-imports": "4.7.1",
-    "@playwright/test": "1.62.0",
+    "@playwright/test": "1.62.1",
     "@storybook/addon-docs": "10.5.5",
     "@storybook/addon-svelte-csf": "5.1.2",
     "@storybook/addon-vitest": "10.5.5",
@@ -75,11 +75,11 @@
     "typed-query-selector": "2.12.2",
     "typescript": "6.0.3",
     "typescript-eslint": "8.65.0",
-    "vite": "8.1.5",
+    "vite": "8.2.0",
     "vitest": "4.1.10"
   },
   "packageManager": "pnpm@11.18.0",
   "dependencies": {
-    "@lucide/svelte": "1.27.0"
+    "@lucide/svelte": "1.28.0"
   }
 }
